@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request Blood - LIFE DROPS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #ffe5e5;
+      color: #8b0000;
+    }
+
+    header {
+      background-color: #8b0000;
+      color: white;
+      padding: 10px 20px;
+    }
+
+    .logo-section {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-section img {
+      height: 60px;
+      width: 183px;
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .moto {
+      font-size: 14px;
+      margin-top: 4px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .menu {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .form-section {
+      background-color: white;
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: 600;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button[type="submit"] {
+      background-color: #8b0000;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s, box-shadow 0.3s;
+    }
+
+    button[type="submit"]:hover,
+    button[type="submit"]:focus {
+      background-color: #ff0000;
+      box-shadow: 0 4px 12px rgba(255, 0, 0, 0.5);
+    }
+
+
+    footer {
+      background-color: #8b0000;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    footer .footer-content {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    footer a {
+      color: #ffcccc;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #8b0000;
+        margin-top: 10px;
+      }
+
+      .menu a {
+        padding: 10px;
+        border-top: 1px solid #fff;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo-section">
+        <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-6/500059376_122158593704569708_8871479540171835459_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFk8x1dp3tR4YEMi2mheGeCoZ7odK24lkChnuh0rbiWQEyb9ekZoMF97ANasJ6NOe16Hrl4A1s_HHCmsWxgaSkI&_nc_ohc=KXWYkm2UQ7gQ7kNvwHLe1xu&_nc_oc=Admp3IHXBJ_R4xINfiIr6lUjUish2v_Ha6w4ZAitVAYlZa7QE2T6xyRmUKcIN3n_b9A&_nc_zt=23&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=RfWzwwaWz6OXqYqHHIWqvw&oh=00_AfLIqF8BaN5sMRpf3zL5P3tTiIKCxfG5rwZmXcUdzdWPoA&oe=6838C7FB" alt="Logo">
+      </div>
+
+      <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+      <div class="menu" id="menu">
+        <a href="index.html">| Home </a>
+        <a href="about.html">| About Us </a>
+        <a href="quick.html">| Quick Donate </a>
+        <a href="request.html">| Request Blood </a>
+        <a href="find.html">| Find Donor </a>
+        <a href="become-a-donor.html">| Become a Donor </a>
+        <a href="team.html">| Our Team </a>
+        <a href="events.html">| Events & Campaigns </a>
+        <a href="stories.html">| Success Stories </a>
+        <a href="volunteer.html">| Join as a Volunteer </a>
+        <a href="faqs.html">| FAQs</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="form-section">
+  <h2>Request Blood</h2>
+  <form action="https://formspree.io/f/xkgrdjod" method="POST">
+    
+    <label for="patient-name">Patient's Name *</label>
+    <input type="text" id="patient-name" name="patient-name" required>
+
+    <label for="age">Age *</label>
+    <input type="number" id="age" name="age" required>
+
+    <label for="blood-group">Blood Group *</label>
+    <select id="blood-group" name="blood-group" required>
+      <option value="">Select</option>
+      <option value="A+">A+</option>
+      <option value="A-">A-</option>
+      <option value="B+">B+</option>
+      <option value="B-">B-</option>
+      <option value="AB+">AB+</option>
+      <option value="AB-">AB-</option>
+      <option value="O+">O+</option>
+      <option value="O-">O-</option>
+    </select>
+
+    <label for="disease">Disease/Problem *</label>
+    <input type="text" id="disease" name="disease" required>
+
+    <label for="amount">How much blood needed? *</label>
+    <select id="amount" name="amount" required>
+      <option value="">Select amount of bags</option>
+      <option value="1 bag">1 bag</option>
+      <option value="2 bags">2 bags</option>
+      <option value="3 bags">3 bags</option>
+      <option value="4 bags">4 bags</option>
+      <option value="5 bags">5 bags</option>
+      <option value="6 bags">6 bags</option>
+      <option value="7 bags">7 bags</option>
+      <option value="8 bags">8 bags</option>
+      <option value="9 bags">9 bags</option>
+      <option value="10 bags">10 bags</option>
+      <option value="10+ bags">10+ bags</option>
+    </select>
+
+    <label for="hospital">Hospital Name *</label>
+    <input type="text" id="hospital" name="hospital" required>
+
+    <label for="district">District *</label>
+    <input type="text" id="district" name="district" required>
+
+    <label for="guardian-phone">Guardian's Phone Number *</label>
+    <input type="tel" id="guardian-phone" name="guardian-phone" required>
+
+    <label for="alt-phone1">Alternative Phone Number 1</label>
+    <input type="tel" id="alt-phone1" name="alt-phone1">
+
+    <label for="alt-phone2">Alternative Phone Number 2</label>
+    <input type="tel" id="alt-phone2" name="alt-phone2">
+
+    <label for="comments">Comments *</label>
+    <textarea id="comments" name="comments" rows="4" required></textarea>
+
+    <button type="submit">Submit Request</button>
+  </form>
+</div>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 LIFE DROPS. All rights reserved.</p>
+      <div>
+        <a href="privacy-policy.html">Privacy Policy</a>|
+        <a href="terms-of-service.html">Terms of Service</a>|
+        <a href="cookies.html">Cookies</a>
+      </div>
+      <div>
+        <p>Contact us: <a href="mailto:lifedrops.info@gmail.com">lifedrops.info@gmail.com</a> | <a href="tel:+8801234567890">+880 1234-567890</a></p>
+      </div>
+      <div>
+        <p>Follow us on:
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      if (menu.style.display === "flex") {
+        menu.style.display = "none";
+      } else {
+        menu.style.display = "flex";
+      }
+    }
+  </script>
+</body>
+
+</html>

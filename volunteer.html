@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join as a Volunteer - LIFE DROPS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fff0f0;
+      color: #8b0000;
+    }
+
+    header, footer {
+      background-color: #8b0000;
+      color: white;
+      padding: 15px 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo-section img {
+      height: 60px;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .menu {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #8b0000;
+        margin-top: 10px;
+        text-align: left;
+        padding-left: 20px;
+      }
+
+      .menu a {
+        padding: 10px 0;
+        border-top: 1px solid #fff;
+      }
+
+      .menu-toggle {
+        display: block;
+        color: white;
+      }
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .form-container h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #8b0000;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .student-fields {
+      display: none;
+    }
+
+    .submit-btn {
+      background-color: #8b0000;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .submit-btn:hover {
+      background-color: red;
+    }
+
+    footer {
+      background-color: #8b0000;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    footer .footer-content {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo-section">
+        <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-6/500059376_122158593704569708_8871479540171835459_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFk8x1dp3tR4YEMi2mheGeCoZ7odK24lkChnuh0rbiWQEyb9ekZoMF97ANasJ6NOe16Hrl4A1s_HHCmsWxgaSkI&_nc_ohc=KXWYkm2UQ7gQ7kNvwHLe1xu&_nc_oc=Admp3IHXBJ_R4xINfiIr6lUjUish2v_Ha6w4ZAitVAYlZa7QE2T6xyRmUKcIN3n_b9A&_nc_zt=23&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=RfWzwwaWz6OXqYqHHIWqvw&oh=00_AfLIqF8BaN5sMRpf3zL5P3tTiIKCxfG5rwZmXcUdzdWPoA&oe=6838C7FB" alt="Logo">
+      </div>
+      <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+      <div class="menu" id="menu">
+        <a href="index.html">| Home </a>
+        <a href="about.html">| About Us </a>
+        <a href="quick.html">| Quick Donate </a>
+        <a href="request.html">| Request Blood </a>
+        <a href="find.html">| Find Donor </a>
+        <a href="become-a-donor.html">| Become a Donor </a>
+        <a href="team.html">| Our Team </a>
+        <a href="events.html">| Events & Campaigns </a>
+        <a href="stories.html">| Success Stories </a>
+        <a href="volunteer.html">| Join as a Volunteer </a>
+        <a href="faqs.html">| FAQs</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="form-container">
+    <h2>Join as a Volunteer</h2>
+    <form action="https://formspree.io/f/xjkwnyag" method="POST">
+  <label for="name">Full Name</label>
+  <input type="text" id="name" name="full-name" required>
+
+  <label for="father">Father's Name</label>
+  <input type="text" id="father" name="father-name" required>
+
+  <label for="mother">Mother's Name</label>
+  <input type="text" id="mother" name="mother-name" required>
+
+  <label for="occupation">Occupation</label>
+  <select id="occupation" name="occupation" onchange="showStudentFields()" required>
+    <option value="">-- Select Occupation --</option>
+    <option value="student">Student</option>
+    <option value="service">Service Holder</option>
+    <option value="business">Businessman</option>
+  </select>
+
+  <div class="student-fields" id="studentFields">
+    <label for="studyLevel">Study Level</label>
+    <select id="studyLevel" name="study-level">
+      <option>Class 6</option>
+      <option>Class 7</option>
+      <option>Class 8</option>
+      <option>Class 9</option>
+      <option>Class 10</option>
+      <option>Class 11</option>
+      <option>Class 12</option>
+      <option>Undergraduate 1st Year</option>
+      <option>Undergraduate 2nd Year</option>
+      <option>Undergraduate 3rd Year</option>
+      <option>Undergraduate 4th Year</option>
+    </select>
+
+    <label for="institution">Institution Name</label>
+    <input type="text" id="institution" name="institution-name">
+  </div>
+
+  <label for="mobile">Mobile Number (WhatsApp)</label>
+  <input type="tel" id="mobile" name="mobile" required pattern="^\+880[0-9]{9,10}$" placeholder="+8801XXXXXXXXX">
+
+  <label for="email">Email Address</label>
+  <input type="email" id="email" name="email" required placeholder="example@email.com">
+
+  <label for="dob">Date of Birth</label>
+  <input type="date" id="dob" name="date-of-birth" required>
+
+  <label for="nid">NID / Birth Registration Number</label>
+  <input type="number" id="nid" name="nid-number" required>
+
+  <label for="image-link">Image Link <small>(Upload to Google Drive or Dropbox and paste link)</small></label>
+  <input type="url" id="image-link" name="image-link" placeholder="Paste image link here" required>
+
+  <label for="nidCard-link">NID / Birth Reg. Card Link <small>(Upload to Google Drive or Dropbox and paste link)</small></label>
+  <input type="url" id="nidCard-link" name="nid-card-link" placeholder="Paste card image link here" required>
+
+  <button type="submit" class="submit-btn">Submit</button>
+</form>
+
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 LIFE DROPS. All rights reserved.</p>
+      <div>
+        <a href="privacy-policy.html">Privacy Policy</a> |
+        <a href="terms-of-service.html">Terms of Service</a> |
+        <a href="cookies.html">Cookies</a>
+      </div>
+        <p>Contact us: <a href="mailto:lifedrops.info@gmail.com">lifedrops.info@gmail.com</a> | <a href="tel:+8801234567890">+880 1234-567890</a></p>
+      <p>Follow us on:
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    }
+
+    function showStudentFields() {
+      const occupation = document.getElementById('occupation').value;
+      const studentFields = document.getElementById('studentFields');
+      if (occupation === 'student') {
+        studentFields.style.display = 'block';
+      } else {
+        studentFields.style.display = 'none';
+      }
+    }
+  </script>
+
+</body>
+</html>

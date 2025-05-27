@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Success Stories - LIFE DROPS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fff0f0;
+    }
+
+    header {
+      background-color: #8b0000;
+      color: white;
+      padding: 10px 20px;
+    }
+
+    footer {
+      background-color: #8b0000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo-section img {
+      height: 60px;
+      width: 183px;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .menu {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #8b0000;
+        margin-top: 10px;
+        text-align: left;
+        padding-left: 20px;
+      }
+
+      .menu a {
+        padding: 10px 0;
+        border-top: 1px solid #fff;
+      }
+
+      .menu-toggle {
+        display: block;
+        color: white;
+      }
+    }
+
+    .stories-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .story-card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .story-card img {
+      max-width: 200px;
+      border-radius: 8px;
+    }
+
+    .story-content h2 {
+      color: #8b0000;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .story-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .story-card img {
+        max-width: 100%;
+      }
+
+      .story-content h2 {
+        font-size: 20px;
+      }
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo-section">
+        <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-6/500059376_122158593704569708_8871479540171835459_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFk8x1dp3tR4YEMi2mheGeCoZ7odK24lkChnuh0rbiWQEyb9ekZoMF97ANasJ6NOe16Hrl4A1s_HHCmsWxgaSkI&_nc_ohc=KXWYkm2UQ7gQ7kNvwHLe1xu&_nc_oc=Admp3IHXBJ_R4xINfiIr6lUjUish2v_Ha6w4ZAitVAYlZa7QE2T6xyRmUKcIN3n_b9A&_nc_zt=23&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=RfWzwwaWz6OXqYqHHIWqvw&oh=00_AfLIqF8BaN5sMRpf3zL5P3tTiIKCxfG5rwZmXcUdzdWPoA&oe=6838C7FB" alt="Logo">
+      </div>
+      <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+      <div class="menu" id="menu">
+        <a href="index.html">| Home </a>
+        <a href="about.html">| About Us </a>
+        <a href="quick.html">| Quick Donate </a>
+        <a href="request.html">| Request Blood </a>
+        <a href="find.html">| Find Donor </a>
+        <a href="become-a-donor.html">| Become a Donor </a>
+        <a href="team.html">| Our Team </a>
+        <a href="events.html">| Events & Campaigns </a>
+        <a href="stories.html">| Success Stories </a>
+        <a href="volunteer.html">| Join as a Volunteer </a>
+        <a href="faqs.html">| FAQs</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="stories-container">
+    <div class="story-card">
+      <img src="https://via.placeholder.com/200x150" alt="Story Image 1">
+      <div class="story-content">
+        <h2>A Life Saved in Time</h2>
+        <p>During a critical moment, our donor network responded within minutes to save a child with rare blood type. This success was possible because of our dedicated volunteers and on-call donors.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <img src="https://via.placeholder.com/200x150" alt="Story Image 2">
+      <div class="story-content">
+        <h2>Unite for Humanity Campaign</h2>
+        <p>Through our awareness campaign in 2024, over 2,000 new donors joined LIFE DROPS. This marked a historic rise in emergency blood availability across multiple districts.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <img src="https://via.placeholder.com/200x150" alt="Story Image 3">
+      <div class="story-content">
+        <h2>Community Hero in Chittagong</h2>
+        <p>Meet Arman, a university student from Chittagong who donated blood 12 times in a year and inspired dozens of friends to register as well. His dedication truly reflects the spirit of LIFE DROPS.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 LIFE DROPS. All rights reserved.</p>
+      <div>
+        <a href="privacy-policy.html">Privacy Policy</a> |
+        <a href="terms-of-service.html">Terms of Service</a> |
+        <a href="cookies.html">Cookies</a>
+      </div>
+        <p>Contact us: <a href="mailto:lifedrops.info@gmail.com">lifedrops.info@gmail.com</a> | <a href="tel:+8801234567890">+880 1234-567890</a></p>
+      <p>Follow us on:
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
+</body>
+</html>
