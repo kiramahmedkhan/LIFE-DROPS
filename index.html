@@ -30,50 +30,32 @@
       max-width: 400px;
     }
 
-    .logo-placeholder img {
-      width: 230px;
-      height: 230px;
-      border-radius: 10px;
-      object-fit: cover;
-      margin-bottom: 20px;
+    img:hover {
+      opacity: 0.8;
+      cursor: pointer;
+      background-color: #07f827;
     }
 
     .enter-button {
       padding: 12px 30px;
-      font-size: 18px;
       background-color: #ce0a0a; 
-      color: white;
       border: none;
-      border-radius: 10px;
-      cursor: pointer;
       transition: background-color 0.3s, box-shadow 0.3s;
-      font-family: 'Times New Roman', Times, serif;
-    }
-
-    .enter-button:hover {
-      background-color: #07f827;
     }
 
     @media (max-width: 400px) {
       .enter-button {
-        font-size: 16px;
         padding: 10px 25px;
-      }
-
-      .logo-placeholder img {
-        width: 110px;
-        height: 110px;
       }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="logo-placeholder">
-      <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-6/500742111_122159064620569708_4742986570393259500_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEHHIpxbAYLM8MNAIsgLtoDlbFLxN2eBRmVsUvE3Z4FGXMT6QLuyH5F4YovMzvODh-zlnJ1bmiFTT867Qkh0okj&_nc_ohc=NRyWc2gYxGwQ7kNvwFsgkuG&_nc_oc=AdlmbLMYxA8AmQTiTKTIX_mql6d_f88Ut-iEhlfOjI4mlo_mpdNjrbmM0pZw2jznbMA&_nc_zt=23&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=OFHWwTTNsi8FXoCth60p4g&oh=00_AfKm2A_Cslay8fRS9dasCyk38vw5eydo76MiWmhhq2Gssg&oe=683BEF27" alt="Logo" />
-    </div>
     <a href="home.html">
-      <button class="enter-button">ENTER</button>
+      <button style="background: none; border: none; padding: 0;">
+  <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-6/500609464_122159157788569708_9118038607564302746_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGYg12NB073egim4jwOe-dAyhb6TSpJCq_KFvpNKkkKr3XC7XDEtzTUEEAGPeS8WML6C8U5AVOMgIbn--3cfXFu&_nc_ohc=LYdKTL4ePAEQ7kNvwEhREbD&_nc_oc=AdkLcfQGrrkdt06vNltRiiPcvhCtZquByKmgF6Izg_XgVI-0prjHZWChTWrsbwSWdNY&_nc_zt=23&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=Nc-8th1enoWUqJagRov-hQ&oh=00_AfLfZCu1qV-_2cZ1Ojc9aVckm0YQB3lhkIFJvRXLu8dj3g&oe=683CC330" alt="Click Me" width="300px" height="300px">
+</button>
     </a>
   </div>
 </body>
