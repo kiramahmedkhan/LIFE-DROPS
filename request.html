@@ -180,7 +180,7 @@
 
       <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
       <div class="menu" id="menu">
-        <a href="index.html">| Home </a>
+        <a href="home.html">| Home </a>
         <a href="about.html">| About Us </a>
         <a href="quick.html">| Quick Donate </a>
         <a href="request.html">| Request Blood </a>
@@ -195,8 +195,10 @@
     </div>
   </header>
 
-  <div class="form-section">
+<div class="form-section">
   <h2>Request Blood</h2>
+  <p><strong>N.B.:</strong> FILL UP THE FORM WITH CORRECT INFORMATION!</p><br>
+
   <form action="https://formspree.io/f/xkgrdjod" method="POST">
     
     <label for="patient-name">Patient's Name *</label>
@@ -243,6 +245,13 @@
     <label for="district">District *</label>
     <input type="text" id="district" name="district" required>
 
+    <label for="time">Date & Time of Donation *</label>
+    <input type="date" id="date" name="date" required>
+    <input type="time" id="time" name="time" required>
+
+    <label for="guardian-name">Guardian's Name *</label>
+    <input type="text" id="guardian-name" name="guardian-name" required>
+
     <label for="guardian-phone">Guardian's Phone Number *</label>
     <input type="tel" id="guardian-phone" name="guardian-phone" required>
 
@@ -252,8 +261,10 @@
     <label for="alt-phone2">Alternative Phone Number 2</label>
     <input type="tel" id="alt-phone2" name="alt-phone2">
 
-    <label for="comments">Comments *</label>
-    <textarea id="comments" name="comments" rows="4" required></textarea>
+    <label for="comments">Comments</label>
+    <textarea id="comments" name="comments" rows="4"></textarea>
+
+    <label><input type="checkbox" name="subscribe" value="yes"> I sincerely claim that, all the informations given by me in this form are correct.</label>
 
     <button type="submit">Submit Request</button>
   </form>
