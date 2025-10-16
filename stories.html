@@ -138,7 +138,20 @@
     footer a:hover {
       text-decoration: underline;
     }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .page-element {
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
   </style>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 </head>
 <body>
   <header>
@@ -211,6 +224,10 @@
       const menu = document.getElementById('menu');
       menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
     }
+    AOS.init({
+    duration: 1000, // Animation duration in ms
+    once: true      // Animate only once per element
+  });
   </script>
 </body>
 </html>

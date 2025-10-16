@@ -153,7 +153,20 @@
         display: block;
       }
     }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .page-element {
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
   </style>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 </head>
 
 <body>
@@ -288,7 +301,13 @@
         card.style.display = (districtMatch && groupMatch) ? 'block' : 'none';
       });
     }
-  </script>
+
+  AOS.init({
+    duration: 1000, // Animation duration in ms
+    once: true      // Animate only once per element
+  });
+</script>
+
 </body>
 
 </html>
